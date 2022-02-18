@@ -7,6 +7,7 @@ function Timeline() {
       <div className="timeline-container">
         <div className="timeline-item">
           <div className="timeline-content">
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               quis turpis rutrum, pulvinar purus nec, tristique nulla. Morbi
@@ -18,6 +19,7 @@ function Timeline() {
         </div>
         <div className="timeline-item">
           <div className="timeline-content">
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               quis turpis rutrum, pulvinar purus nec, tristique nulla. Morbi
@@ -29,6 +31,7 @@ function Timeline() {
         </div>
         <div className="timeline-item">
           <div className="timeline-content">
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               quis turpis rutrum, pulvinar purus nec, tristique nulla. Morbi

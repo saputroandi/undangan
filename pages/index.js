@@ -34,9 +34,11 @@ export default function Home() {
 
           .flower {
             width: 55%;
+            // width: 14rem;
             position: absolute;
             bottom: -2.8rem;
             left: -3rem;
+            z-index: 1;
           }
 
           .home {
