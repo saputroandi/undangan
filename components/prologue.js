@@ -1,9 +1,12 @@
+import Flower from './flower';
+
 /* eslint-disable @next/next/no-img-element */
 function Prologue() {
   return (
     <section className="container prologue">
+      <Flower />
       <div className="prologue-image">
-        <img src="/asset/Bunga.png" alt="bunga.png" />
+        <img src="/asset/basmallah.png" alt="basmallah.png" />
       </div>
       <div className="prologue-content">
         <p>
@@ -21,11 +24,11 @@ function Prologue() {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 2rem;
+          gap: 0.6rem;
         }
 
         .prologue-image > img {
-          height: 8rem;
+          width: 16rem;
         }
 
         .prologue-content > p {
