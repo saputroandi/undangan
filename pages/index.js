@@ -1,5 +1,6 @@
 import Couple from '../components/couple';
 import CoupleDetails from '../components/coupledetails';
+import Maps from '../components/maps';
 import Prologue from '../components/prologue';
 import Timeline from '../components/timeline';
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Prologue />
       <CoupleDetails />
       <Timeline />
+      <Maps />
       <style global jsx>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Kaushan+Script&display=swap');

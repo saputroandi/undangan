@@ -46,7 +46,7 @@ function Timeline() {
       <style jsx>{`
         .timeline-item {
           position: relative;
-          width: 4px;
+          width: 0.25rem;
           padding: 1rem 0;
           background: grey;
         }
@@ -57,8 +57,8 @@ function Timeline() {
           left: 50%;
           bottom: 50%;
           transform: translateX(-50%);
-          width: 15px;
-          height: 15px;
+          width: 1rem;
+          height: 1rem;
           border-radius: 50%;
           background: inherit;
         }
@@ -66,10 +66,10 @@ function Timeline() {
         .timeline-content {
           position: relative;
           bottom: 0;
-          width: 14rem;
-          padding: 15px;
+          width: calc(100vw - 9rem);
+          padding: 1rem;
           background: rgb(238, 195, 115);
-          left: 30px;
+          left: 2.25rem;
           border-radius: 1rem;
         }
 
@@ -80,8 +80,8 @@ function Timeline() {
           width: 0;
           height: 0;
           border-style: solid;
-          left: -15px;
-          border-width: 8px 16px 8px 0;
+          left: -1rem;
+          border-width: 0.5rem 1rem 0.5rem 0;
           border-color: transparent rgb(238, 195, 115) transparent transparent;
         }
       `}</style>
