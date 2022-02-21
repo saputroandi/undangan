@@ -14,8 +14,7 @@ export default function Home() {
       <Maps />
       <style global jsx>
         {`
-          @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Kaushan+Script&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alice&family=Great+Vibes&display=swap');
 
           * {
             padding: 0;
@@ -44,7 +43,8 @@ export default function Home() {
           }
 
           .home {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Alice', serif;
+            color: rgb(104, 89, 82);
           }
 
           .home::before {
@@ -56,7 +56,7 @@ export default function Home() {
             display: block;
             width: 100%;
             height: 100vh;
-            background-image: url('/asset/bg-body.jpg');
+            background-image: url('/asset/bg-rustic.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 60% 40%;

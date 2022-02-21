@@ -7,38 +7,47 @@ function Timeline() {
       <div className="timeline-container">
         <div className="timeline-item">
           <div className="timeline-content">
-            <h2>Lorem ipsum</h2>
+            <h2>25 Nov 2021</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              quis turpis rutrum, pulvinar purus nec, tristique nulla. Morbi
-              sapien erat, suscipit id viverra in, hendrerit non massa. Integer
-              porttitor metus risus, a hendrerit erat posuere ut. Fusce ultrices
-              erat ut facilisis maximus.
+              Berkenalan secara tidak sengaja dan tentunya dengan izin Allah di
+              media sosial. Dan memutuskan untuk bertemu.
             </p>
           </div>
         </div>
         <div className="timeline-item">
           <div className="timeline-content">
-            <h2>Lorem ipsum</h2>
+            <h2>28 Nov 2021</h2>
+            <p>Pertama kali bertemu di salah satu cafe</p>
+          </div>
+        </div>
+        <div className="timeline-item">
+          <div className="timeline-content">
+            <h2>5 Desember 2021</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              quis turpis rutrum, pulvinar purus nec, tristique nulla. Morbi
-              sapien erat, suscipit id viverra in, hendrerit non massa. Integer
-              porttitor metus risus, a hendrerit erat posuere ut. Fusce ultrices
-              erat ut facilisis maximus.
+              Kedua kali bertemu dan saling berkenalan dengan orang tua masing -
+              masing.
             </p>
           </div>
         </div>
         <div className="timeline-item">
           <div className="timeline-content">
-            <h2>Lorem ipsum</h2>
+            <h2>31 Januari 2022</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              quis turpis rutrum, pulvinar purus nec, tristique nulla. Morbi
-              sapien erat, suscipit id viverra in, hendrerit non massa. Integer
-              porttitor metus risus, a hendrerit erat posuere ut. Fusce ultrices
-              erat ut facilisis maximus.
+              Meminta izin orang tua untuk menikah dan membeli persiapan untuk
+              lamaran
             </p>
+          </div>
+        </div>
+        <div className="timeline-item">
+          <div className="timeline-content">
+            <h2>13 Februari 2022</h2>
+            <p>Lamaran</p>
+          </div>
+        </div>
+        <div className="timeline-item">
+          <div className="timeline-content">
+            <h2>27 Maret 2022</h2>
+            <p>InsyaAllah menikah 😊</p>
           </div>
         </div>
       </div>
@@ -68,7 +77,7 @@ function Timeline() {
           bottom: 0;
           width: calc(100vw - 9rem);
           padding: 1rem;
-          background: rgb(238, 195, 115);
+          background: rgb(244, 223, 186);
           left: 2.25rem;
           border-radius: 1rem;
         }
@@ -82,7 +91,7 @@ function Timeline() {
           border-style: solid;
           left: -1rem;
           border-width: 0.5rem 1rem 0.5rem 0;
-          border-color: transparent rgb(238, 195, 115) transparent transparent;
+          border-color: transparent rgb(244, 223, 186) transparent transparent;
         }
       `}</style>
     </section>

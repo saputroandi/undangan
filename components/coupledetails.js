@@ -66,6 +66,8 @@ function CoupleDetails() {
 
         .girl-name > p,
         .boy-name > p {
+          font-family: 'Great Vibes', serif;
+          letter-spacing: 0.245rem;
           font-size: 2em;
           font-weight: bold;
         }
