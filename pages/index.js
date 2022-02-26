@@ -3,6 +3,7 @@ import Couple from "../components/couple";
 import CoupleDetails from "../components/coupledetails";
 import Maps from "../components/maps";
 import Prologue from "../components/prologue";
+import Resepsi from "../components/resepsi";
 import Timeline from "../components/timeline";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <CoupleDetails />
       <Timeline />
       <Akad />
+      <Resepsi />
       <Maps />
 
       <style global jsx>

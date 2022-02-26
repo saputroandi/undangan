@@ -3,20 +3,23 @@
 import Flower from "./flower";
 
 /* eslint-disable jsx-a11y/alt-text */
-function Akad() {
+function Resepsi() {
   return (
-    <section className="akad container">
+    <section className="resepsi container">
       <Flower />
-      <div className="akad-content">
+      <div className="resepsi-content">
         <div className="header">
-          <p>Akad</p>
+          <p>Resepsi</p>
+        </div>
+        <div className="sesi">
+          <p>Sesi: {"1"}</p>
         </div>
         <div className="jam">
           <div className="jam-header">
             <p>Pukul:</p>
           </div>
           <div>
-            <p>{"08:00 : 09:30"} WIB</p>
+            <p>{"10:00 : 12:00"} WIB</p>
           </div>
         </div>
         <div className="tanggal">
@@ -52,7 +55,7 @@ function Akad() {
       </div>
 
       <style jsx>{`
-        .akad-content {
+        .resepsi-content {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -63,6 +66,10 @@ function Akad() {
           font-family: "Great Vibes", serif;
           letter-spacing: 0.245rem;
           font-size: 2em;
+          font-weight: bold;
+        }
+
+        .sesi {
           font-weight: bold;
         }
 
@@ -135,4 +142,4 @@ function Akad() {
   );
 }
 
-export default Akad;
+export default Resepsi;
