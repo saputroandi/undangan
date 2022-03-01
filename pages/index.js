@@ -1,8 +1,10 @@
 import Akad from "../components/akad";
 import Couple from "../components/couple";
 import CoupleDetails from "../components/coupledetails";
+import Gift from "../components/gift";
 import Maps from "../components/maps";
 import Prologue from "../components/prologue";
+import Protokol from "../components/protokol";
 import Resepsi from "../components/resepsi";
 import Timeline from "../components/timeline";
 
@@ -12,10 +14,12 @@ export default function Home() {
       <Couple />
       <Prologue />
       <CoupleDetails />
-      <Timeline />
       <Akad />
       <Resepsi />
       <Maps />
+      <Timeline />
+      <Protokol />
+      <Gift />
 
       <style global jsx>
         {`
@@ -121,7 +125,7 @@ function HomeWrapper({ children }) {
         .image-bot {
           width: 13rem;
           position: absolute;
-          bottom: -5.5rem;
+          bottom: 0;
           right: 0;
           z-index: -10;
           overflow: hidden;

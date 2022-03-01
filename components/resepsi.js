@@ -12,15 +12,9 @@ function Resepsi() {
           <p>Resepsi</p>
         </div>
         <div className="sesi">
-          <p>Sesi: {"1"}</p>
-        </div>
-        <div className="jam">
-          <div className="jam-header">
-            <p>Pukul:</p>
-          </div>
-          <div>
-            <p>{"10:00 : 12:00"} WIB</p>
-          </div>
+          <p>Sesi I: 10:00 - 12:00</p>
+          <p>Sesi II: 13:00 - 15:00</p>
+          <p>Sesi III: 15:00 - 17:00</p>
         </div>
         <div className="tanggal">
           <div className="tanggal-left-section">
@@ -71,17 +65,7 @@ function Resepsi() {
 
         .sesi {
           font-weight: bold;
-        }
-
-        .jam {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.25rem;
-        }
-
-        .jam-header {
-          font-weight: bold;
+          text-align: center;
         }
 
         .tanggal {
