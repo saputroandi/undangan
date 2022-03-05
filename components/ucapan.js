@@ -47,7 +47,7 @@ function Ucapan() {
 
   useEffect(() => {
     handleFetch();
-  }, [data]);
+  }, []);
 
   return (
     <section className="ucapan container">
