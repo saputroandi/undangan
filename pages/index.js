@@ -7,6 +7,7 @@ import Prologue from "../components/prologue";
 import Protokol from "../components/protokol";
 import Resepsi from "../components/resepsi";
 import Timeline from "../components/timeline";
+import Ucapan from "../components/ucapan";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Timeline />
       <Protokol />
       <Gift />
+      <Ucapan />
 
       <style global jsx>
         {`
@@ -89,13 +91,17 @@ function HomeWrapper({ children }) {
           position: relative;
           width: 100%;
           height: 100vh;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
           overflow: hidden;
         }
 
         .home-wrapper::before {
           content: "";
           width: 100%;
-          height: 100vh;
+          height: 100%;
           position: absolute;
           top: 0;
           right: 0;

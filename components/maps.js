@@ -1,5 +1,3 @@
-import GoogleMapReact from 'google-map-react';
-
 function Maps() {
   return (
     <section className="maps">
