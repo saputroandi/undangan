@@ -187,7 +187,7 @@ function Ucapan() {
 
         .ucapan-pesan {
           overflow: hidden;
-          text-align: justify;
+          text-align: left;
         }
 
         button {

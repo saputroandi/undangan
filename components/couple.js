@@ -3,32 +3,28 @@
 function Couple() {
   return (
     <div className="couple">
-      <div className="head">
-        <p>Walimatul Ursy</p>
-      </div>
-      <div className="couple-name">
-        <div className="couple-name-girl">
-          <p>Arum</p>
+      <div className="couple-wrapper">
+        <div className="head">
+          <p>Walimatul Ursy</p>
         </div>
-        <div className="couple-name-and">
-          <p>&</p>
+        <div className="couple-name">
+          <div className="couple-name-girl">
+            <p>Arum</p>
+          </div>
+          <div className="couple-name-and">
+            <p>&</p>
+          </div>
+          <div className="couple-name-boy">
+            <p>Andi</p>
+          </div>
         </div>
-        <div className="couple-name-boy">
-          <p>Andi</p>
-        </div>
-      </div>
-      {/* <div className="opening">
+        {/* <div className="opening">
         <img src="/asset/opening-flower.png" alt="opening-flower.png" />
       </div> */}
+      </div>
       <style jsx>{`
         .couple {
-          width: 100%;
-          height: 100vh;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 1rem;
           // color: rgb(244, 223, 186);
           font-family: "Great Vibes", sans-serif;
           letter-spacing: 0.245rem;
@@ -37,6 +33,17 @@ function Couple() {
           // background-repeat: no-repeat;
           // background-size: cover;
           // background-position: 60% 40%;
+        }
+
+        .couple-wrapper {
+          width: 100%;
+          height: 100vh;
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
         }
 
         .couple-name {
