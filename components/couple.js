@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 function Couple() {
   return (
-    <section className="couple">
+    <div className="couple">
       <div className="head">
         <p>Walimatul Ursy</p>
       </div>
@@ -58,7 +58,7 @@ function Couple() {
           transform: rotate(-25deg);
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 

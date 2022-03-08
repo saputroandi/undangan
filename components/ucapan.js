@@ -50,7 +50,7 @@ function Ucapan() {
   }, []);
 
   return (
-    <section className="ucapan container">
+    <div className="ucapan container" data-aos="fade-up">
       <Flower />
       <div className="ucapan-wrapper">
         <div className="header">
@@ -75,10 +75,11 @@ function Ucapan() {
               <div className="input-label">
                 <p>Pesan:</p>
               </div>
-              <input
+              <textarea
                 placeholder="Selamat menikah..."
                 value={pesanBaru.pesan}
                 onChange={handleChangePesan}
+                rows={5}
               />
             </div>
 
@@ -134,11 +135,17 @@ function Ucapan() {
           width: 100%;
         }
 
-        input {
+        input,
+        textarea {
           width: 100%;
           padding: 0.5rem;
           border-radius: 0.25rem;
           border: none;
+        }
+
+        input:focus,
+        textarea:focus {
+          outline: none;
         }
 
         .ucapan-container {
@@ -188,7 +195,7 @@ function Ucapan() {
           font-weight: bold;
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 

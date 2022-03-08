@@ -11,7 +11,7 @@ function Gift() {
   };
 
   return (
-    <section className="gift container">
+    <div className="gift container" data-aos="fade-up">
       <Flower />
       <div className="gift-wrapper">
         <div className="header">
@@ -210,7 +210,7 @@ function Gift() {
           font-size: 1.2em;
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 

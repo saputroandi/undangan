@@ -3,7 +3,7 @@ import Flower from "./flower";
 /* eslint-disable @next/next/no-img-element */
 function Prologue() {
   return (
-    <section className="container prologue">
+    <div className="container prologue" data-aos="fade-up">
       <Flower />
       <div className="prologue-image">
         <img src="/asset/basmallah.png" alt="basmallah.png" />
@@ -36,7 +36,7 @@ function Prologue() {
           padding: 2rem;
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 export default Prologue;

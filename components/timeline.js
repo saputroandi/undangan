@@ -1,8 +1,8 @@
-import Flower from './flower';
+import Flower from "./flower";
 
 function Timeline() {
   return (
-    <section className="timeline container">
+    <div className="timeline container" data-aos="fade-up">
       <Flower />
       <div className="timeline-container">
         <div className="timeline-item">
@@ -61,7 +61,7 @@ function Timeline() {
         }
 
         .timeline-item::after {
-          content: '';
+          content: "";
           position: absolute;
           left: 50%;
           bottom: 50%;
@@ -83,7 +83,7 @@ function Timeline() {
         }
 
         .timeline-content::before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 50%;
           width: 0;
@@ -94,7 +94,7 @@ function Timeline() {
           border-color: transparent rgb(244, 223, 186) transparent transparent;
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 

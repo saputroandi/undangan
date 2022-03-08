@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Akad from "../components/akad";
 import Couple from "../components/couple";
 import CoupleDetails from "../components/coupledetails";
@@ -10,8 +14,13 @@ import Timeline from "../components/timeline";
 import Ucapan from "../components/ucapan";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  }, []);
   return (
-    <HomeWrapper className="home">
+    <div className="home">
       <Couple />
       <Prologue />
       <CoupleDetails />
@@ -38,7 +47,7 @@ export default function Home() {
             position: relative;
             height: 100%;
             width: 100%;
-            overflow: hidden;
+            // overflow: hidden;
           }
 
           .container {
@@ -69,7 +78,7 @@ export default function Home() {
           }
         `}
       </style>
-    </HomeWrapper>
+    </div>
   );
 }
 

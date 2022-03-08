@@ -3,7 +3,7 @@ import rules from "./rules";
 
 function Protokol() {
   return (
-    <section className="protokol container">
+    <div className="protokol container" data-aos="fade-up">
       <Flower />
       <div className="protokol-content-wrapper">
         <div className="protokol-header">
@@ -83,7 +83,7 @@ function Protokol() {
           transform: scale(1.15, 1.15);
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 

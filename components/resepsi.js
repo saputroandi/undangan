@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-
 import Flower from "./flower";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 /* eslint-disable jsx-a11y/alt-text */
 function Resepsi() {
   return (
-    <section className="resepsi container">
+    <div className="resepsi container" data-aos="fade-up">
       <Flower />
       <div className="resepsi-content">
         <div className="header">
@@ -122,7 +124,7 @@ function Resepsi() {
           text-align: center;
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 

@@ -1,9 +1,9 @@
-import Flower from './flower';
-
+import Flower from "./flower";
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 function CoupleDetails() {
   return (
-    <section className="couple container">
+    <div className="couple container" data-aos="fade-up">
       <Flower />
       <div className="couple-image">
         <img src="/asset/couple.jpg" alt="couple.jpg" />
@@ -66,7 +66,7 @@ function CoupleDetails() {
 
         .girl-name > p,
         .boy-name > p {
-          font-family: 'Great Vibes', serif;
+          font-family: "Great Vibes", serif;
           letter-spacing: 0.245rem;
           font-size: 2em;
           font-weight: bold;
@@ -81,7 +81,7 @@ function CoupleDetails() {
           font-weight: bold;
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 

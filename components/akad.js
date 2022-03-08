@@ -5,7 +5,7 @@ import Flower from "./flower";
 /* eslint-disable jsx-a11y/alt-text */
 function Akad() {
   return (
-    <section className="akad container">
+    <div data-aos="fade-up" className="akad container">
       <Flower />
       <div className="akad-content">
         <div className="header">
@@ -131,7 +131,7 @@ function Akad() {
           text-align: center;
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 

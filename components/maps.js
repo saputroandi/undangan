@@ -1,6 +1,6 @@
 function Maps() {
   return (
-    <section className="maps">
+    <div className="maps" data-aos="fade-up">
       <div className="gmap">
         <div className="gmap_canvas">
           <iframe
@@ -31,7 +31,7 @@ function Maps() {
           height: 100vw;
         }
       `}</style>
-    </section>
+    </div>
   );
 }
 
