@@ -19,6 +19,7 @@ function Maps() {
           display: flex;
           justify-content: center;
           margin-bottom: 3rem;
+          z-index: 10;
         }
         .gmap {
           border-radius: 0.5rem;
