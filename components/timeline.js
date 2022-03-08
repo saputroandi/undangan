@@ -53,6 +53,9 @@ function Timeline() {
       </div>
 
       <style jsx>{`
+        .timeline {
+          margin-bottom: 3rem;
+        }
         .timeline-item {
           position: relative;
           width: 0.25rem;

@@ -25,6 +25,7 @@ function Prologue() {
           flex-direction: column;
           align-items: center;
           gap: 0.6rem;
+          margin-bottom: 3rem;
         }
 
         .prologue-image > img {

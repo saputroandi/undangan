@@ -51,7 +51,7 @@ function Ucapan() {
 
   return (
     <div className="ucapan container" data-aos="fade-up">
-      <Flower />
+      {/* <Flower /> */}
       <div className="ucapan-wrapper">
         <div className="header">
           <p>Ucapan & Doa</p>

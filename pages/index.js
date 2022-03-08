@@ -21,6 +21,9 @@ export default function Home() {
   }, []);
   return (
     <div className="home">
+      <div className="image-top">
+        <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
+      </div>
       <Couple />
       <Prologue />
       <CoupleDetails />
@@ -31,6 +34,9 @@ export default function Home() {
       <Protokol />
       <Gift />
       <Ucapan />
+      <div className="image-bot">
+        <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
+      </div>
 
       <style global jsx>
         {`
@@ -40,12 +46,13 @@ export default function Home() {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            // border: solid 1px red;
           }
 
           html,
           body {
             position: relative;
-            height: 100%;
+            height: 100vh;
             width: 100%;
             // overflow: hidden;
           }
@@ -53,7 +60,7 @@ export default function Home() {
           .container {
             position: relative;
             width: 86%;
-            margin: 0 auto 3rem auto;
+            margin: 0 auto;
             background-color: rgba(255, 255, 255, 0.75);
             padding: 2.5rem 2rem;
             border: 2px solid rgb(102, 51, 0);
@@ -73,83 +80,36 @@ export default function Home() {
           .home {
             font-family: "Alice", serif;
             color: rgb(68, 73, 65);
-            background-color: rgb(191, 146, 112);
-            height: inherit;
+            // background-color: rgb(191, 146, 112);
+            padding: 3rem 0;
+          }
+
+          .image-top {
+            position: fixed;
+            width: 15rem;
+            top: -2rem;
+            left: -3rem;
+            z-index: -10;
+          }
+
+          .image-top > img {
+            width: inherit;
+          }
+
+          .image-bot {
+            width: 13rem;
+            position: fixed;
+            bottom: -3rem;
+            right: 0;
+            z-index: -10;
+            overflow: hidden;
+          }
+
+          .image-bot > img {
+            width: inherit;
           }
         `}
       </style>
-    </div>
-  );
-}
-
-function HomeWrapper({ children }) {
-  return (
-    <div className="home-wrapper">
-      <div className="content-wrapper">
-        <div className="image-top">
-          <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
-        </div>
-        {children}
-        <div className="image-bot">
-          <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
-        </div>
-      </div>
-
-      <style jsx>{`
-        .home-wrapper {
-          position: relative;
-          width: 100%;
-          height: 100vh;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          overflow: hidden;
-        }
-
-        .home-wrapper::before {
-          content: "";
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: -20;
-          background-color: rgb(191, 146, 112);
-        }
-
-        .content-wrapper {
-          height: 100%;
-          overflow: auto;
-        }
-
-        .image-top {
-          position: absolute;
-          width: 16rem;
-          top: -2rem;
-          left: -3rem;
-          z-index: -10;
-        }
-
-        .image-top > img {
-          width: 16rem;
-        }
-
-        .image-bot {
-          width: 13rem;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: -10;
-          overflow: hidden;
-        }
-
-        .image-bot > img {
-          width: 16rem;
-        }
-      `}</style>
     </div>
   );
 }

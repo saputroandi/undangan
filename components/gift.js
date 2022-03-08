@@ -166,6 +166,9 @@ function Gift() {
       </div>
 
       <style jsx>{`
+        .gift {
+          margin-bottom: 3rem;
+        }
         .gift-wrapper {
           display: flex;
           flex-direction: column;

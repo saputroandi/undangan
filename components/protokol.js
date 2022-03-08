@@ -31,6 +31,9 @@ function Protokol() {
       </div>
 
       <style jsx>{`
+        .protokol {
+          margin-bottom: 3rem;
+        }
         .protokol-content-wrapper {
           display: flex;
           flex-direction: column;

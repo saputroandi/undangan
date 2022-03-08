@@ -52,6 +52,9 @@ function Akad() {
       </div>
 
       <style jsx>{`
+        .akad {
+          margin-bottom: 3rem;
+        }
         .akad-content {
           display: flex;
           flex-direction: column;

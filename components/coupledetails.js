@@ -38,6 +38,9 @@ function CoupleDetails() {
       </div>
 
       <style jsx>{`
+        .couple {
+          margin-bottom: 3rem;
+        }
         .couple-image {
           width: 100%;
           display: flex;

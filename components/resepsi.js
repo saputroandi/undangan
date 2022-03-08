@@ -51,6 +51,9 @@ function Resepsi() {
       </div>
 
       <style jsx>{`
+        .resepsi {
+          margin-bottom: 3rem;
+        }
         .resepsi-content {
           display: flex;
           flex-direction: column;
