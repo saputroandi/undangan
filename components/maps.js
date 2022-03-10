@@ -1,6 +1,6 @@
 function Maps() {
   return (
-    <div className="maps" data-aos="fade-up">
+    <div className="maps container" data-aos="fade-up">
       <div className="gmap">
         <div className="gmap_canvas">
           <iframe
@@ -13,12 +13,19 @@ function Maps() {
           />
         </div>
       </div>
+      <div className="link-button">
+        <a href="https://goo.gl/maps/JTubxLm8Fcjesq5Q6" target="_blank">
+          Buka di Google Maps
+        </a>
+      </div>
 
       <style jsx>{`
         .maps {
           display: flex;
-          justify-content: center;
+          flex-direction: column;
+          align-items: center;
           margin-bottom: 3rem;
+          gap: 1rem;
           z-index: 10;
         }
         .gmap {
@@ -30,6 +37,17 @@ function Maps() {
         iframe {
           width: 100%;
           height: 100vw;
+        }
+
+        .link-button {
+          padding: 0.5rem 0.75rem;
+          background-color: rgb(191, 146, 112);
+          border-radius: 0.25rem;
+        }
+
+        a {
+          color: rgb(0, 0, 0);
+          text-decoration: none;
         }
       `}</style>
     </div>

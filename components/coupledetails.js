@@ -1,7 +1,7 @@
 import Flower from "./flower";
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-function CoupleDetails() {
+function CoupleDetails(props) {
   return (
     <div className="couple container" data-aos="fade-up">
       <Flower />
@@ -33,6 +33,14 @@ function CoupleDetails() {
             <p>Bapak Harsoyo</p>
             <p>dan</p>
             <p>Ibu Sukatmi</p>
+          </div>
+        </div>
+        <div className="love-story">
+          <div
+            className="love-story-button"
+            onClick={() => props.setDisplayLoveStory(true)}
+          >
+            <p>Love Story</p>
           </div>
         </div>
       </div>
@@ -82,6 +90,12 @@ function CoupleDetails() {
           gap: 0.4rem;
           font-size: 1.1em;
           font-weight: bold;
+        }
+
+        .love-story-button {
+          padding: 0.5rem 0.75rem;
+          background-color: rgb(191, 146, 112);
+          border-radius: 0.25rem;
         }
       `}</style>
     </div>

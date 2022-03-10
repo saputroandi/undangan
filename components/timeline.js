@@ -1,9 +1,11 @@
 import Flower from "./flower";
 
-function Timeline() {
+function Timeline(props) {
   return (
-    <div className="timeline container" data-aos="fade-up">
-      <Flower />
+    <div className="timeline">
+      <div className="timeline-header">
+        <p>Love Story</p>
+      </div>
       <div className="timeline-container">
         <div className="timeline-item">
           <div className="timeline-content">
@@ -51,11 +53,47 @@ function Timeline() {
           </div>
         </div>
       </div>
+      <div>
+        <div
+          className="close-button"
+          onClick={() => props.setDisplayLoveStory(false)}
+        >
+          <p>Tutup</p>
+        </div>
+      </div>
 
       <style jsx>{`
         .timeline {
           margin-bottom: 3rem;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          padding: 1rem;
+          background-color: rgb(254, 251, 243);
+          z-index: 35;
+          overflow: scroll;
+          height: 100vh;
+          width: 100%;
+          text-align: center;
         }
+
+        .timeline-container {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding-left: 1rem;
+        }
+
+        .timeline-header {
+          font-family: "Great Vibes", serif;
+          letter-spacing: 0.245rem;
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+
         .timeline-item {
           position: relative;
           width: 0.25rem;
@@ -78,7 +116,7 @@ function Timeline() {
         .timeline-content {
           position: relative;
           bottom: 0;
-          width: calc(100vw - 9rem);
+          width: calc(100vw - 6rem);
           padding: 1rem;
           background: rgb(244, 223, 186);
           left: 2.25rem;
@@ -95,6 +133,14 @@ function Timeline() {
           left: -1rem;
           border-width: 0.5rem 1rem 0.5rem 0;
           border-color: transparent rgb(244, 223, 186) transparent transparent;
+        }
+
+        .close-button {
+          padding: 0.5rem 0.75rem;
+          border-radius: 0.25rem;
+          background-color: rgb(191, 146, 112);
+          margin: 1.5rem auto 0 auto;
+          width: 10rem;
         }
       `}</style>
     </div>

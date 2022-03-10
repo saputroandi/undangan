@@ -14,10 +14,13 @@ import Resepsi from "../components/resepsi";
 import Timeline from "../components/timeline";
 import Ucapan from "../components/ucapan";
 import Background from "../components/background";
-import Rekening from "../components/rekening-details";
+import GiftIcon from "../components/giftIcon";
+import MusicIcon from "../components/musicIcon";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
+  const [displayRekening, setDisplayRekening] = useState(false);
+  const [displayLoveStory, setDisplayLoveStory] = useState(false);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -32,41 +35,75 @@ export default function Home() {
     window.addEventListener("scroll", toggleVisible);
   }
 
-  const [displayRekening, setDisplayRekening] = useState(false);
-
   useEffect(() => {
     AOS.init({
       duration: 500,
     });
   }, []);
+
   return (
     <div className="home">
       <div className="image-top">
         <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
       </div>
+      <div className="home-background"></div>
+
       <Couple />
+
       <Prologue />
-      <CoupleDetails />
+
+      <CoupleDetails
+        setDisplayLoveStory={(visible) => setDisplayLoveStory(visible)}
+      />
+
       <Akad />
+
       <Resepsi />
+
       <Maps />
-      <Timeline />
+
       <Protokol />
-      <Gift setVisible={(visible) => setDisplayRekening(visible)} />
+
       <Ucapan />
+
       <div className="image-bot">
         <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
       </div>
+
+      {/* Modal Component below */}
+
+      <CSSTransition in={visible} unmountOnExit timeout={500} classNames="fade">
+        <MusicIcon />
+      </CSSTransition>
+
+      <CSSTransition in={visible} unmountOnExit timeout={500} classNames="fade">
+        <GiftIcon
+          setDisplayRekening={(visible) => setDisplayRekening(visible)}
+        />
+      </CSSTransition>
+
       <CSSTransition in={visible} unmountOnExit timeout={500} classNames="fade">
         <Background />
       </CSSTransition>
+
       <CSSTransition
-        in={displayRekening}
+        in={displayLoveStory}
         unmountOnExit
         timeout={500}
         classNames="fade"
       >
-        <Rekening setVisible={(visible) => setDisplayRekening(visible)} />
+        <Timeline
+          setDisplayLoveStory={(visible) => setDisplayLoveStory(visible)}
+        />
+      </CSSTransition>
+
+      <CSSTransition
+        in={displayRekening}
+        unmountOnExit
+        timeout={50}
+        classNames="fade"
+      >
+        <Gift setDisplayRekening={(visible) => setDisplayRekening(visible)} />
       </CSSTransition>
 
       <style global jsx>
@@ -162,6 +199,19 @@ export default function Home() {
             transition: opacity 300ms;
             opacity: 0;
             z-index: -30;
+          }
+
+          .home-background {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            z-index: -31;
+            background-color: rgb(244, 223, 186);
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
           }
         `}
       </style>
