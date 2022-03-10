@@ -1,4 +1,8 @@
 function Maps() {
+  // const openInNewTab = (url) => {
+  //   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  //   if (newWindow) newWindow.opener = null;
+  // };
   return (
     <div className="maps container" data-aos="fade-up">
       <div className="gmap">
@@ -14,7 +18,16 @@ function Maps() {
         </div>
       </div>
       <div className="link-button">
-        <a href="https://goo.gl/maps/JTubxLm8Fcjesq5Q6" target="_blank">
+        <a
+          // href="https://goo.gl/maps/JTubxLm8Fcjesq5Q6"
+          onClick={() =>
+            window.open(
+              "https://goo.gl/maps/JTubxLm8Fcjesq5Q6",
+              "_blank",
+              "noopener,noreferrer"
+            )
+          }
+        >
           Buka di Google Maps
         </a>
       </div>
