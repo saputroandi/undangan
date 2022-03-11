@@ -1,29 +1,20 @@
 import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
+import ReactHowler from "react-howler";
 
 function MusicIcon() {
-  const [audio] = useState(
-    new Audio("/sound/MarryYourDaughter-BrianMcKnight(cut).mp3")
-  );
-  const [playing, setPlaying] = useState(false);
-
+  const [playing, setPlaying] = useState(true);
   const toggle = () => setPlaying(!playing);
-
-  useEffect(() => {
-    playing ? audio.play() : audio.pause();
-  }, [playing]);
-
-  useEffect(() => {
-    audio.addEventListener("ended", () => setPlaying(false));
-    return () => {
-      audio.removeEventListener("ended", () => setPlaying(false));
-    };
-  }, []);
 
   return (
     <div className="music-icon">
       <div className="music-icon-wrapper">
-        <CSSTransition in={!playing} unmountOnExit timeout={0}>
+        <ReactHowler
+          src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
+          playing={playing}
+          loop={true}
+        />
+        <CSSTransition in={playing} unmountOnExit timeout={0}>
           <svg
             onClick={toggle}
             version={1.0}
@@ -57,7 +48,7 @@ function MusicIcon() {
             </g>
           </svg>
         </CSSTransition>
-        <CSSTransition in={playing} unmountOnExit timeout={0}>
+        <CSSTransition in={!playing} unmountOnExit timeout={0}>
           <svg
             onClick={toggle}
             version={1.0}

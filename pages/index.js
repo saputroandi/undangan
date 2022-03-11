@@ -42,69 +42,71 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home">
-      <div className="image-top">
-        <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
-      </div>
-      <div className="home-background"></div>
+    <div className="home-wrapper">
+      <div className="home">
+        <div className="image-top">
+          <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
+        </div>
+        <div className="home-background"></div>
 
-      <Couple />
+        <Couple />
 
-      <Prologue />
+        <Prologue />
 
-      <CoupleDetails
-        setDisplayLoveStory={(visible) => setDisplayLoveStory(visible)}
-      />
+        <CoupleDetails
+          setDisplayLoveStory={(visible) => setDisplayLoveStory(visible)}
+        />
 
-      <Akad />
+        <Akad />
 
-      <Resepsi />
+        <Resepsi />
 
-      <Maps />
+        <Maps />
 
-      <Protokol />
+        <Protokol />
 
-      <Ucapan />
+        <Ucapan />
 
-      <div className="image-bot">
-        <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
-      </div>
+        <div className="image-bot">
+          <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
+        </div>
 
-      {/* Modal Component below */}
+        {/* Modal Component below */}
 
-      <CSSTransition in={visible} unmountOnExit timeout={500} classNames="fade">
         <MusicIcon />
-      </CSSTransition>
-
-      <CSSTransition in={visible} unmountOnExit timeout={500} classNames="fade">
         <GiftIcon
           setDisplayRekening={(visible) => setDisplayRekening(visible)}
         />
-      </CSSTransition>
 
-      <CSSTransition in={visible} unmountOnExit timeout={500} classNames="fade">
-        <Background />
-      </CSSTransition>
+        <CSSTransition
+          in={visible}
+          unmountOnExit
+          timeout={500}
+          classNames="fade"
+        >
+          <Background />
+        </CSSTransition>
 
-      <CSSTransition
-        in={displayLoveStory}
-        unmountOnExit
-        timeout={500}
-        classNames="fade"
-      >
-        <Timeline
-          setDisplayLoveStory={(visible) => setDisplayLoveStory(visible)}
-        />
-      </CSSTransition>
+        <CSSTransition
+          in={displayLoveStory}
+          unmountOnExit
+          timeout={500}
+          classNames="fade"
+        >
+          <Timeline
+            setDisplayLoveStory={(visible) => setDisplayLoveStory(visible)}
+          />
+        </CSSTransition>
 
-      <CSSTransition
-        in={displayRekening}
-        unmountOnExit
-        timeout={50}
-        classNames="fade"
-      >
-        <Gift setDisplayRekening={(visible) => setDisplayRekening(visible)} />
-      </CSSTransition>
+        <CSSTransition
+          in={displayRekening}
+          unmountOnExit
+          timeout={50}
+          classNames="fade"
+        >
+          <Gift setDisplayRekening={(visible) => setDisplayRekening(visible)} />
+        </CSSTransition>
+      </div>
 
       <style global jsx>
         {`
@@ -120,8 +122,6 @@ export default function Home() {
           html,
           body {
             position: relative;
-            height: 100vh;
-            width: 100%;
             // overflow: hidden;
           }
 
@@ -212,6 +212,16 @@ export default function Home() {
             right: 0;
             bottom: 0;
             left: 0;
+          }
+
+          @media only screen and (min-width: 768px) {
+            .home-wrapper {
+              margin: 0 auto;
+              width: 23.4375rem;
+            }
+            .home {
+              position: relative;
+            }
           }
         `}
       </style>
