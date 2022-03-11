@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { sanityClient } from "../lib/sanity";
-import Flower from "./flower";
 import { DateTime } from "luxon";
 
 function Ucapan() {
@@ -51,7 +50,6 @@ function Ucapan() {
 
   return (
     <div className="ucapan container" data-aos="fade-up">
-      {/* <Flower /> */}
       <div className="ucapan-wrapper">
         <div className="header">
           <p>Ucapan & Doa</p>
@@ -65,7 +63,7 @@ function Ucapan() {
               </div>
               <div>
                 <input
-                  placeholder="Lina"
+                  placeholder="Tulis Nama"
                   onChange={handleChangeNama}
                   value={pesanBaru.nama}
                 />
@@ -76,7 +74,7 @@ function Ucapan() {
                 <p>Pesan:</p>
               </div>
               <textarea
-                placeholder="Selamat menikah..."
+                placeholder="Tulis Pesan"
                 value={pesanBaru.pesan}
                 onChange={handleChangePesan}
                 rows={5}

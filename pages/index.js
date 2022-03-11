@@ -16,9 +16,11 @@ import Ucapan from "../components/ucapan";
 import Background from "../components/background";
 import GiftIcon from "../components/giftIcon";
 import MusicIcon from "../components/musicIcon";
+import WelcomePage from "../components/welcomepage";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
+  const [displayWelcomePage, setDisplayWelcomePage] = useState(true);
   const [displayRekening, setDisplayRekening] = useState(false);
   const [displayLoveStory, setDisplayLoveStory] = useState(false);
 
@@ -74,9 +76,28 @@ export default function Home() {
         {/* Modal Component below */}
 
         <MusicIcon />
-        <GiftIcon
-          setDisplayRekening={(visible) => setDisplayRekening(visible)}
-        />
+
+        <CSSTransition
+          in={displayWelcomePage}
+          unmountOnExit
+          timeout={500}
+          classNames="fade"
+        >
+          <WelcomePage
+            setDisplayWelcomePage={(visible) => setDisplayWelcomePage(visible)}
+          />
+        </CSSTransition>
+
+        <CSSTransition
+          in={visible}
+          unmountOnExit
+          timeout={500}
+          classNames="fade"
+        >
+          <GiftIcon
+            setDisplayRekening={(visible) => setDisplayRekening(visible)}
+          />
+        </CSSTransition>
 
         <CSSTransition
           in={visible}
@@ -151,7 +172,7 @@ export default function Home() {
             color: rgb(68, 73, 65);
             // background-color: rgb(191, 146, 112);
             background-color: rgba(0, 0, 0, 0);
-            padding-bottom: 3rem;
+            padding: 3rem 0;
           }
 
           .image-top {

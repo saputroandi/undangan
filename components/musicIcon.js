@@ -13,6 +13,7 @@ function MusicIcon() {
           src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
           playing={playing}
           loop={true}
+          volume={0.25}
         />
         <CSSTransition in={playing} unmountOnExit timeout={0}>
           <svg
@@ -80,12 +81,13 @@ function MusicIcon() {
       <style jsx>{`
         .music-icon {
           position: fixed;
-          bottom: 7rem;
-          right: 1rem;
+          bottom: 0;
+          right: 0;
           width: 100%;
           z-index: 35;
           display: flex;
           justify-content: end;
+          margin: 0 1rem 7rem 0;
         }
 
         .music-icon-wrapper {

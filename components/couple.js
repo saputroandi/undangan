@@ -18,9 +18,6 @@ function Couple() {
             <p>Andi</p>
           </div>
         </div>
-        {/* <div className="opening">
-        <img src="/asset/opening-flower.png" alt="opening-flower.png" />
-      </div> */}
       </div>
       <style jsx>{`
         .couple {
@@ -58,11 +55,6 @@ function Couple() {
 
         .event-schedule {
           font-size: 1.5rem;
-        }
-
-        .opening > img {
-          width: 14rem;
-          transform: rotate(-25deg);
         }
       `}</style>
     </div>
