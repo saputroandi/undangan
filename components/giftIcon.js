@@ -60,19 +60,12 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
           width: 100vw;
           height: 100%;
           position: relative;
-          display: flex;
-          justify-content: flex-end;
           z-index: 45;
         }
         .gift-icon {
-          position: sticky;
+          position: fixed;
           top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
           width: 100%;
-          display: flex;
-          justify-content: end;
           // margin: 0 1rem 11rem 0;
         }
 

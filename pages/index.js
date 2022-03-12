@@ -53,7 +53,7 @@ export default function Home() {
 
         <Couple />
 
-        {/* <Prologue />
+        <Prologue />
 
         <CoupleDetails
           setDisplayLoveStory={(visible) => setDisplayLoveStory(visible)}
@@ -67,7 +67,7 @@ export default function Home() {
 
         <Protokol />
 
-        <Ucapan /> */}
+        <Ucapan />
 
         <div className="image-bot">
           <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
@@ -75,7 +75,7 @@ export default function Home() {
 
         {/* Modal Component below */}
 
-        <MusicIcon />
+        {/* <MusicIcon /> */}
 
         <CSSTransition
           in={displayWelcomePage}
