@@ -1,23 +1,24 @@
 function GiftIcon(props) {
   return (
-    <div className="gift-icon">
-      <div
-        className="gift-icon-wrapper"
-        onClick={() => props.setDisplayRekening(true)}
-      >
-        <svg
-          version={1.0}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 128.000000 128.000000"
-          preserveAspectRatio="xMidYMid meet"
+    <div className="gift-container">
+      <div className="gift-icon">
+        <div
+          className="gift-icon-wrapper"
+          onClick={() => props.setDisplayRekening(true)}
         >
-          <g
-            transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
-            fill="#000000"
-            stroke="none"
+          <svg
+            version={1.0}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128.000000 128.000000"
+            preserveAspectRatio="xMidYMid meet"
           >
-            <path
-              d="M203 1266 c-36 -16 -56 -43 -78 -105 -18 -51 -21 -88 -11 -118 7 -21
+            <g
+              transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
+              fill="#000000"
+              stroke="none"
+            >
+              <path
+                d="M203 1266 c-36 -16 -56 -43 -78 -105 -18 -51 -21 -88 -11 -118 7 -21
 4 -22 -51 -25 l-58 -3 0 -85 c0 -69 3 -85 15 -85 12 0 16 15 18 68 l3 67 71 0
 c60 0 211 -31 227 -46 2 -2 -16 -42 -40 -89 l-44 -85 -106 0 c-100 0 -107 1
 -112 21 -9 33 -32 17 -32 -22 0 -33 1 -34 42 -37 l43 -3 2 -357 3 -357 545 0
@@ -48,12 +49,18 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
 26 62 47 65 47 3 0 24 -27 46 -61 23 -33 47 -58 53 -56 7 2 24 50 38 108 15
 57 40 133 57 169 l30 65 1 -327 1 -328 -195 0 -195 0 0 340 0 340 50 0 c28 0
 50 -2 50 -5z m490 -335 l0 -340 -80 0 -80 0 0 340 0 340 80 0 80 0 0 -340z"
-            />
-          </g>
-        </svg>
+              />
+            </g>
+          </svg>
+        </div>
       </div>
 
       <style jsx>{`
+        .gift-container {
+          width: 100vh;
+          height: 100%;
+          position: relative;
+        }
         .gift-icon {
           position: fixed;
           top: 0;
