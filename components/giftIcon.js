@@ -69,7 +69,7 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
         }
 
         .gift-icon-wrapper {
-          margin: 11rem 1rem auto auto;
+          margin: 28rem 1rem auto auto;
           width: 2.75rem;
           height: 2.75rem;
           display: flex;

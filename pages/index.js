@@ -88,16 +88,16 @@ export default function Home() {
           />
         </CSSTransition>
 
-        {/* <CSSTransition
+        <CSSTransition
           in={visible}
           unmountOnExit
           timeout={500}
           classNames="fade"
-        > */}
-        <GiftIcon
-          setDisplayRekening={(visible) => setDisplayRekening(visible)}
-        />
-        {/* </CSSTransition> */}
+        >
+          <GiftIcon
+            setDisplayRekening={(visible) => setDisplayRekening(visible)}
+          />
+        </CSSTransition>
 
         <CSSTransition
           in={visible}
