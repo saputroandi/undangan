@@ -10,12 +10,12 @@ function MusicIcon() {
     <div className="music-container">
       <div className="music-icon">
         <div className="music-icon-wrapper">
-          {/* <ReactHowler
+          <ReactHowler
             src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
             playing={playing}
             loop={true}
             volume={0.25}
-          /> */}
+          />
           <CSSTransition in={playing} unmountOnExit timeout={0}>
             <svg
               onClick={toggle}
