@@ -81,13 +81,15 @@ function MusicIcon() {
       <style jsx>{`
         .music-icon {
           position: fixed;
+          top: 0;
           bottom: 0;
           right: 0;
+          left: 0;
           width: 100%;
           z-index: 35;
           display: flex;
           justify-content: end;
-          margin: 0 1rem 7rem 0;
+          // margin: 0 1rem 7rem 0;
         }
 
         .music-icon-wrapper {

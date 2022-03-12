@@ -56,13 +56,15 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
       <style jsx>{`
         .gift-icon {
           position: fixed;
+          top: 0;
           bottom: 0;
           right: 0;
+          left: 0;
           width: 100%;
           z-index: 35;
           display: flex;
           justify-content: end;
-          margin: 0 1rem 11rem 0;
+          // margin: 0 1rem 11rem 0;
         }
 
         .gift-icon-wrapper {
