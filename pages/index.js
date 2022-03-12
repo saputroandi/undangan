@@ -53,7 +53,7 @@ export default function Home() {
 
         <Couple />
 
-        <Prologue />
+        {/* <Prologue />
 
         <CoupleDetails
           setDisplayLoveStory={(visible) => setDisplayLoveStory(visible)}
@@ -67,7 +67,7 @@ export default function Home() {
 
         <Protokol />
 
-        <Ucapan />
+        <Ucapan /> */}
 
         <div className="image-bot">
           <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
@@ -88,16 +88,16 @@ export default function Home() {
           />
         </CSSTransition>
 
-        <CSSTransition
+        {/* <CSSTransition
           in={visible}
           unmountOnExit
           timeout={500}
           classNames="fade"
-        >
-          <GiftIcon
-            setDisplayRekening={(visible) => setDisplayRekening(visible)}
-          />
-        </CSSTransition>
+        > */}
+        <GiftIcon
+          setDisplayRekening={(visible) => setDisplayRekening(visible)}
+        />
+        {/* </CSSTransition> */}
 
         <CSSTransition
           in={visible}
