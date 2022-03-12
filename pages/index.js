@@ -75,7 +75,7 @@ export default function Home() {
 
         {/* Modal Component below */}
 
-        {/* <MusicIcon /> */}
+        <MusicIcon />
 
         <CSSTransition
           in={displayWelcomePage}

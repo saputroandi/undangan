@@ -60,7 +60,7 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
           width: 100vw;
           height: 100%;
           position: relative;
-          z-index: 45;
+          z-index: 40;
         }
         .gift-icon {
           position: fixed;
@@ -69,7 +69,7 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
         }
 
         .gift-icon-wrapper {
-          margin: 28rem 1rem auto auto;
+          margin: 25rem 1rem auto auto;
           width: 2.75rem;
           height: 2.75rem;
           display: flex;
