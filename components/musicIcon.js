@@ -99,6 +99,10 @@ function MusicIcon(props) {
           animation: musicIcon 5s linear 0s infinite normal;
         }
 
+        svg {
+          z-index: 40;
+        }
+
         @keyframes musicIcon {
           0% {
             transform: rotate(0deg);

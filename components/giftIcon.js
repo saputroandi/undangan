@@ -81,6 +81,10 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
           animation: gifticon 1.5s linear 0s infinite alternate;
         }
 
+        svg {
+          z-index: 40;
+        }
+
         @keyframes gifticon {
           0% {
             transform: rotate(-15deg);
