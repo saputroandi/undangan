@@ -497,7 +497,6 @@ ZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg=="
           z-index: 41;
           justify-content: center;
           margin: 0 auto 2rem auto;
-          gap: 1rem;
           transition: transform 2s;
         }
 
@@ -508,6 +507,7 @@ ZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg=="
           border-radius: 0.25rem;
           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
             rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          margin: 0 0.5rem;
         }
 
         .scale-up {

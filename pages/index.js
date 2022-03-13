@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { CSSTransition } from "react-transition-group";
+import ReactHowler from "react-howler";
 
 import Akad from "../components/akad";
 import Couple from "../components/couple";
@@ -24,6 +25,7 @@ export default function Home() {
   const [displayWelcomePage, setDisplayWelcomePage] = useState(true);
   const [displayRekening, setDisplayRekening] = useState(false);
   const [displayLoveStory, setDisplayLoveStory] = useState(false);
+  const [playing, setPlaying] = useState(true);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -46,6 +48,12 @@ export default function Home() {
 
   return (
     <div className="home-wrapper">
+      <ReactHowler
+        src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
+        playing={playing}
+        loop={true}
+        volume={0.25}
+      />
       <div className="home">
         <div className="image-top">
           <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
@@ -76,7 +84,10 @@ export default function Home() {
 
         {/* Modal Component below */}
 
-        <MusicIcon />
+        <MusicIcon
+          playing={playing}
+          setPlaying={(state) => setPlaying(state)}
+        />
 
         <CSSTransition
           in={displayWelcomePage}

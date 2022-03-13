@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 function WelcomePage(props) {
   const router = useRouter();
   const { to, sesi } = router.query;
-  console.log(sesi);
   return (
     <div>
       <div className="welcome-page">
