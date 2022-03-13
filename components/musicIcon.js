@@ -5,12 +5,14 @@ function MusicIcon(props) {
   return (
     <div className="music-container">
       <div className="music-icon">
-        <div className="music-icon-wrapper">
+        <div
+          className="music-icon-wrapper"
+          onClick={() => {
+            props.setPlaying(!props.playing);
+          }}
+        >
           <CSSTransition in={props.playing} unmountOnExit timeout={0}>
             <svg
-              onClick={() => {
-                props.setPlaying(!props.playing);
-              }}
               version={1.0}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128.000000 128.000000"
@@ -44,9 +46,6 @@ function MusicIcon(props) {
           </CSSTransition>
           <CSSTransition in={!props.playing} unmountOnExit timeout={0}>
             <svg
-              onClick={() => {
-                props.setPlaying(!props.playing);
-              }}
               version={1.0}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128.000000 128.000000"
