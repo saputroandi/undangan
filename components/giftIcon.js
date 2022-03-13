@@ -65,7 +65,7 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
         .gift-icon {
           position: fixed;
           top: 0;
-          width: 100%;
+          right: 0;
         }
 
         .gift-icon-wrapper {

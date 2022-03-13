@@ -86,12 +86,12 @@ function MusicIcon() {
           width: 100vw;
           height: 100%;
           position: relative;
-          z-index: 45;
+          z-index: 40;
         }
         .music-icon {
           position: fixed;
           top: 0;
-          width: 100%;
+          right: 0;
         }
 
         .music-icon-wrapper {
