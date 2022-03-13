@@ -4,7 +4,6 @@ import ReactHowler from "react-howler";
 
 function MusicIcon() {
   const [playing, setPlaying] = useState(true);
-  const toggle = () => setPlaying(!playing);
 
   return (
     <div className="music-container">
@@ -18,7 +17,7 @@ function MusicIcon() {
           />
           <CSSTransition in={playing} unmountOnExit timeout={0}>
             <svg
-              onClick={toggle}
+              onClick={() => setPlaying(!playing)}
               version={1.0}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128.000000 128.000000"
@@ -52,7 +51,7 @@ function MusicIcon() {
           </CSSTransition>
           <CSSTransition in={!playing} unmountOnExit timeout={0}>
             <svg
-              onClick={toggle}
+              onClick={() => setPlaying(!playing)}
               version={1.0}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128.000000 128.000000"
