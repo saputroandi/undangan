@@ -17,6 +17,7 @@ import Background from "../components/background";
 import GiftIcon from "../components/giftIcon";
 import MusicIcon from "../components/musicIcon";
 import WelcomePage from "../components/welcomepage";
+import Navigation from "../components/navigation";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -86,6 +87,10 @@ export default function Home() {
           <WelcomePage
             setDisplayWelcomePage={(visible) => setDisplayWelcomePage(visible)}
           />
+        </CSSTransition>
+
+        <CSSTransition in={visible} unmountOnExit timeout={0} classNames="fade">
+          <Navigation />
         </CSSTransition>
 
         <CSSTransition

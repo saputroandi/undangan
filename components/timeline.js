@@ -72,7 +72,7 @@ function Timeline(props) {
           left: 0;
           padding: 1rem;
           background-color: rgb(254, 251, 243);
-          z-index: 35;
+          z-index: 43;
           overflow: scroll;
           height: 100vh;
           width: 100%;

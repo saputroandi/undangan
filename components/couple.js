@@ -1,40 +1,94 @@
 /* eslint-disable @next/next/no-img-element */
+
+import { DateTime } from "luxon";
+import { useState } from "react";
+
 /* eslint-disable jsx-a11y/alt-text */
 function Couple() {
+  const [hari, setHari] = useState(0);
+  const [jam, setJam] = useState(0);
+  const [menit, setMenit] = useState(0);
+  const [detik, setDetik] = useState(0);
+
+  const timer = () => {
+    const countDate = DateTime.fromFormat(
+      "March 27 2022 09:00:00",
+      "LLLL dd yyyy HH:mm:ss",
+      {
+        zone: "Asia/Jakarta",
+      }
+    );
+    const now = DateTime.now().setZone("Asia/Jakarta");
+    const gap = countDate - now;
+
+    const detik = 1000;
+    const menit = detik * 60;
+    const jam = menit * 60;
+    const hari = jam * 24;
+
+    setHari(Math.floor(gap / hari));
+    setJam(Math.floor((gap % hari) / jam));
+    setMenit(Math.floor((gap % jam) / menit));
+    setDetik(Math.floor((gap % menit) / detik));
+  };
+
+  setInterval(() => timer(), 1000);
   return (
-    <div className="couple">
-      <div className="couple-wrapper">
-        <div className="head">
-          <p>Walimatul Ursy</p>
+    <div className="couple-container">
+      <div className="couple">
+        <div className="couple-wrapper">
+          <div className="head">
+            <p>Walimatul Ursy</p>
+          </div>
+          <div className="couple-name">
+            <div className="couple-name-girl">
+              <p>Arum</p>
+            </div>
+            <div className="couple-name-and">
+              <p>&</p>
+            </div>
+            <div className="couple-name-boy">
+              <p>Andi</p>
+            </div>
+          </div>
         </div>
-        <div className="couple-name">
-          <div className="couple-name-girl">
-            <p>Arum</p>
+        <div className="count-down">
+          <div className="container-waktu">
+            <p className="waktu">{hari}</p>
+            <p>Hari</p>
           </div>
-          <div className="couple-name-and">
-            <p>&</p>
+          <div className="container-waktu">
+            <p className="waktu">{jam}</p>
+            <p>Jam</p>
           </div>
-          <div className="couple-name-boy">
-            <p>Andi</p>
+          <div className="container-waktu">
+            <p className="waktu">{menit}</p>
+            <p>Menit</p>
+          </div>
+          <div className="container-waktu">
+            <p className="waktu">{detik}</p>
+            <p>Detik</p>
           </div>
         </div>
       </div>
+
       <style jsx>{`
+        .couple-container {
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+        }
         .couple {
           display: flex;
-          // color: rgb(244, 223, 186);
           font-family: "Great Vibes", sans-serif;
           letter-spacing: 0.245rem;
           font-size: 3.25rem;
-          // background-image: url('/asset/rustic-frame.png');
-          // background-repeat: no-repeat;
-          // background-size: cover;
-          // background-position: 60% 40%;
+          flex-direction: column;
+          justify-content: space-evenly;
         }
 
         .couple-wrapper {
           width: 100%;
-          height: 100vh;
           z-index: 10;
           display: flex;
           flex-direction: column;
@@ -55,6 +109,27 @@ function Couple() {
 
         .event-schedule {
           font-size: 1.5rem;
+        }
+
+        .count-down {
+          display: flex;
+          gap: 0.5rem;
+          padding: 0.75rem;
+          background-color: rgb(191, 146, 112);
+          text-align: center;
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          z-index: 10;
+          justify-content: center;
+          font-family: "Alice", serif;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+
+        .waktu {
+          font-size: 1.5em;
+          font-weight: bold;
+          margin-bottom: 0.25rem;
         }
       `}</style>
     </div>

@@ -9,15 +9,18 @@ function MusicIcon() {
     <div className="music-container">
       <div className="music-icon">
         <div className="music-icon-wrapper">
-          <ReactHowler
+          {/* <ReactHowler
             src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
             playing={playing}
             loop={true}
             volume={0.25}
-          />
+          /> */}
           <CSSTransition in={playing} unmountOnExit timeout={0}>
             <svg
-              onClick={() => setPlaying(!playing)}
+              onClick={() => {
+                // setPlaying(!playing);
+                alert("ok");
+              }}
               version={1.0}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128.000000 128.000000"
@@ -51,7 +54,10 @@ function MusicIcon() {
           </CSSTransition>
           <CSSTransition in={!playing} unmountOnExit timeout={0}>
             <svg
-              onClick={() => setPlaying(!playing)}
+              onClick={() => {
+                // setPlaying(!playing);
+                alert("ok");
+              }}
               version={1.0}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128.000000 128.000000"

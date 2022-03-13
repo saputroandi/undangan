@@ -183,7 +183,7 @@ function Gift(props) {
           // bottom: 0;
           right: 0;
           left: 0;
-          z-index: 40;
+          z-index: 43;
           margin-top: auto;
           background-color: rgb(254, 251, 243);
           height: 60vh;
@@ -263,7 +263,7 @@ function Gift(props) {
           display: block;
           width: 100vw;
           height: 100vh;
-          z-index: 38;
+          z-index: 42;
           background-color: rgba(0, 0, 0, 0.3);
           position: fixed;
           top: 0;

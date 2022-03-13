@@ -2,7 +2,8 @@ import { useRouter } from "next/router";
 
 function WelcomePage(props) {
   const router = useRouter();
-  const { to } = router.query;
+  const { to, sesi } = router.query;
+  console.log(sesi);
   return (
     <div>
       <div className="welcome-page">
@@ -28,6 +29,7 @@ function WelcomePage(props) {
         {to && (
           <div className="nama-tamu">
             <p>{to}</p>
+            {sesi && <p>Sesi: {sesi}</p>}
           </div>
         )}
         <div>
@@ -77,6 +79,8 @@ function WelcomePage(props) {
           font-size: 1.2em;
           border-radius: 0.5rem;
           text-align: center;
+          gap: 0.85rem;
+          flex-direction: column;
         }
 
         .undangan-button {
