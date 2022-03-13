@@ -14,10 +14,10 @@ function Ucapan() {
   const { ts } = DateTime.now();
 
   const handleFetch = async () => {
-    // const res = await sanityClient.fetch(
-    //   `*[_type == "ucapan"] | order(_createdAt desc)`
-    // );
-    // setData(res);
+    const res = await sanityClient.fetch(
+      `*[_type == "ucapan"] | order(_createdAt desc)`
+    );
+    setData(res);
   };
 
   const handleChangeNama = (event) => {
@@ -89,18 +89,18 @@ function Ucapan() {
 
           <div className="ucapan-container">
             <div className="ucapan-content">
-              {/* {data.map((currentData, idx) => {
-              return (
-                <div className="ucapan-data" key={idx}>
-                  <div className="ucapan-sender">
-                    <p>❤️ {currentData.sender}</p>
+              {data.map((currentData, idx) => {
+                return (
+                  <div className="ucapan-data" key={idx}>
+                    <div className="ucapan-sender">
+                      <p>❤️ {currentData.sender}</p>
+                    </div>
+                    <div className="ucapan-pesan">
+                      <p>{currentData.pesan}</p>
+                    </div>
                   </div>
-                  <div className="ucapan-pesan">
-                    <p>{currentData.pesan}</p>
-                  </div>
-                </div>
-              );
-            })} */}
+                );
+              })}
             </div>
           </div>
         </div>

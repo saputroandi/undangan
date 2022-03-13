@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 
 function MusicIcon(props) {
@@ -93,7 +92,7 @@ function MusicIcon(props) {
           height: 2.75rem;
           display: flex;
           justify-content: center;
-          background-color: rgba(254, 251, 243, 0.85);
+          background-color: rgb(254, 251, 243);
           border: 2px solid rgb(102, 51, 0);
           padding: 0.35rem;
           border-radius: 50%;
