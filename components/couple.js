@@ -37,22 +37,34 @@ function Couple() {
     <div className="couple-container">
       <div className="couple">
         <div className="couple-wrapper">
-          <div className="head">
+          <div className="head" data-aos="fade-down" data-aos-delay="1800">
             <p>Walimatul Ursy</p>
           </div>
           <div className="couple-name">
-            <div className="couple-name-girl">
+            <div
+              className="couple-name-girl"
+              data-aos="fade-right"
+              data-aos-delay="1800"
+            >
               <p>Arum</p>
             </div>
-            <div className="couple-name-and">
+            <div
+              className="couple-name-and"
+              data-aos="zoom-in"
+              data-aos-delay="1800"
+            >
               <p>&</p>
             </div>
-            <div className="couple-name-boy">
+            <div
+              className="couple-name-boy"
+              data-aos="fade-left"
+              data-aos-delay="1800"
+            >
               <p>Andi</p>
             </div>
           </div>
         </div>
-        <div className="count-down">
+        <div className="count-down" data-aos="fade-up" data-aos-delay="2000">
           <div className="container-waktu">
             <p className="waktu">{hari}</p>
             <p>Hari</p>

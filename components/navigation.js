@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <div>
       <div className="navigation-wrapper">
-        <Link offset={-25} to="couple" smooth={true} duration={1000}>
+        <Link offset={-25} to="couple" smooth={true} duration={1500}>
           <div
             className={
               target == "couple"
@@ -15,6 +15,7 @@ function Navigation() {
             }
             onClick={(e) => setTarget("couple")}
             data-aos="fade-right"
+            data-aos-delay="500"
           >
             <svg
               version={1.0}
@@ -54,7 +55,7 @@ l-67 -38 -48 27 c-98 57 -192 119 -192 127 0 5 22 36 48 71 258 332 426 682
             </svg>
           </div>
         </Link>
-        <Link offset={-25} to="resepsi" duration={1000} smooth={true}>
+        <Link offset={-25} to="resepsi" duration={1500} smooth={true}>
           <div
             className={
               target == "resepsi"
@@ -63,6 +64,7 @@ l-67 -38 -48 27 c-98 57 -192 119 -192 127 0 5 22 36 48 71 258 332 426 682
             }
             onClick={(e) => setTarget("resepsi")}
             data-aos="fade-right"
+            data-aos-delay="500"
           >
             <svg
               version={1.0}
@@ -197,13 +199,14 @@ m3520 0 l0 -80 -560 0 -560 0 0 80 0 80 560 0 560 0 0 -80z"
             </svg>
           </div>
         </Link>
-        <Link offset={-25} to="maps" smooth={true} duration={1000}>
+        <Link offset={-25} to="maps" smooth={true} duration={1500}>
           <div
             className={
               target == "maps" ? "navigation-item scale-up" : "navigation-item"
             }
             onClick={(e) => setTarget("maps")}
             data-aos="fade-up"
+            data-aos-delay="500"
           >
             <svg
               version={1.0}
@@ -230,7 +233,7 @@ m3520 0 l0 -80 -560 0 -560 0 0 80 0 80 560 0 560 0 0 -80z"
             </svg>
           </div>
         </Link>
-        <Link offset={-25} to="protokol" smooth={true} duration={1000}>
+        <Link offset={-25} to="protokol" smooth={true} duration={1500}>
           <div
             className={
               target == "protokol"
@@ -239,6 +242,7 @@ m3520 0 l0 -80 -560 0 -560 0 0 80 0 80 560 0 560 0 0 -80z"
             }
             onClick={(e) => setTarget("protokol")}
             data-aos="fade-left"
+            data-aos-delay="500"
           >
             <svg
               version="1.0"
@@ -320,7 +324,7 @@ l-25 -24 0 -351 0 -351 25 -24 24 -25 591 0 591 0 24 25 25 24 0 351 0 351
             </svg>
           </div>
         </Link>
-        <Link offset={-25} to="ucapan" smooth={true} duration={1000}>
+        <Link offset={-25} to="ucapan" smooth={true} duration={1500}>
           <div
             className={
               target == "ucapan"
@@ -329,6 +333,7 @@ l-25 -24 0 -351 0 -351 25 -24 24 -25 591 0 591 0 24 25 25 24 0 351 0 351
             }
             onClick={(e) => setTarget("ucapan")}
             data-aos="fade-left"
+            data-aos-delay="500"
           >
             <svg
               version="1.1"

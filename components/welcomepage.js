@@ -1,42 +1,46 @@
 import { useRouter } from "next/router";
+import Falling from "./falling";
 
 function WelcomePage(props) {
   const router = useRouter();
   const { to, sesi } = router.query;
   return (
     <div>
+      <Falling />
+      <div className="background"></div>
       <div className="welcome-page">
         <div className="header">
-          <div className="initial">
+          <div className="initial" data-aos="fade-right" data-aos-delay="500">
             <h2>A</h2>
           </div>
-          <div className="divider">
+          <div className="divider" data-aos="fade-down" data-aos-delay="500">
             <h2>&</h2>
           </div>
-          <div className="initial">
+          <div className="initial" data-aos="fade-left" data-aos-delay="500">
             <h2>A</h2>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="500">
           <p>
             <strong>Kepada Yth.</strong>
           </p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="500">
           <p>Bapak/Ibu/Saudara/i</p>
         </div>
         {to && (
-          <div className="nama-tamu">
+          <div className="nama-tamu" data-aos="fade-up" data-aos-delay="500">
             <p>{to}</p>
             {sesi && <p>Sesi: {sesi}</p>}
           </div>
         )}
-        <div>
+        <div data-aos="fade-up" data-aos-delay="500">
           <p>di Tempat</p>
         </div>
         <div
           className="undangan-button"
           onClick={() => props.setDisplayWelcomePage(false)}
+          data-aos="zoom-out"
         >
           <p>Buka Undangan</p>
         </div>
@@ -52,7 +56,7 @@ function WelcomePage(props) {
           z-index: 45;
           width: 100%;
           height: 100%;
-          background-color: rgb(254, 251, 243);
+          // background-color: rgb(254, 251, 243);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -88,6 +92,18 @@ function WelcomePage(props) {
           border-radius: 0.25rem;
           animation: welcome 1s linear 0s infinite alternate;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+
+        .background {
+          z-index: 40;
+          background-color: rgb(254, 251, 243);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100vh;
         }
 
         @keyframes welcome {

@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Flower from "./flower";
-import AOS from "aos";
-import { useEffect, useState } from "react";
 import "aos/dist/aos.css";
-import { DateTime } from "luxon";
 
 /* eslint-disable jsx-a11y/alt-text */
 

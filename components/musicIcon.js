@@ -96,11 +96,13 @@ function MusicIcon(props) {
           border: 2px solid rgb(102, 51, 0);
           padding: 0.35rem;
           border-radius: 50%;
-          animation: musicIcon 5s linear 0s infinite normal;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
         }
 
         svg {
           z-index: 40;
+          animation: musicIcon 5s linear 0s infinite normal;
         }
 
         @keyframes musicIcon {

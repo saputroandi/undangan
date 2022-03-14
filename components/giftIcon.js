@@ -79,6 +79,8 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
           padding: 0.35rem;
           border-radius: 0.5rem;
           animation: gifticon 1.5s linear 0s infinite alternate;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
         }
 
         svg {

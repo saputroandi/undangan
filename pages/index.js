@@ -42,7 +42,8 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 700,
+      delay: 200,
     });
   }, []);
 
@@ -52,7 +53,7 @@ export default function Home() {
         src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
         playing={playing}
         loop={true}
-        volume={0.25}
+        volume={0.08}
       />
       <div className="home">
         <div className="image-top">
