@@ -53,7 +53,7 @@ export default function Home() {
         src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
         playing={playing}
         loop={true}
-        volume={0.15}
+        volume={0.18}
       />
       <div className="home">
         <div className="image-top">
