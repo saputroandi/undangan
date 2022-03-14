@@ -64,7 +64,7 @@ function Couple() {
             </div>
           </div>
         </div>
-        <div className="count-down" data-aos="fade-up" data-aos-delay="2000">
+        <div className="count-down" data-aos="fade-up">
           <div className="container-waktu">
             <p className="waktu">{hari}</p>
             <p>Hari</p>
