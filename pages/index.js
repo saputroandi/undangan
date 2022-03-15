@@ -26,6 +26,7 @@ export default function Home() {
   const [displayRekening, setDisplayRekening] = useState(false);
   const [displayLoveStory, setDisplayLoveStory] = useState(false);
   const [playing, setPlaying] = useState(true);
+  const [hidden, setHidden] = useState("hidden");
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -97,7 +98,10 @@ export default function Home() {
           classNames="fade"
         >
           <WelcomePage
-            setDisplayWelcomePage={(visible) => setDisplayWelcomePage(visible)}
+            setDisplayWelcomePage={(visible) => {
+              setDisplayWelcomePage(visible);
+              setHidden("");
+            }}
           />
         </CSSTransition>
 
@@ -160,7 +164,7 @@ export default function Home() {
           html,
           body {
             position: relative;
-            // overflow: hidden;
+            overflow: ${hidden};
           }
 
           .container {
