@@ -47,6 +47,16 @@ function WelcomePage(props) {
       </div>
 
       <style jsx>{`
+        @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          // border: solid 1px red;
+          //https://www.instagram.com/setyariniarum/
+        }
+
         .welcome-page {
           position: fixed;
           top: 0;

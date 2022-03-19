@@ -106,7 +106,7 @@ function Couple() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: 1rem;
+          gap: 0.8rem;
         }
 
         .couple-name {
@@ -141,7 +141,7 @@ function Couple() {
         .waktu {
           font-size: 1.5em;
           font-weight: bold;
-          margin-bottom: 0.25rem;
+          margin-bottom: 0.15rem;
         }
       `}</style>
     </div>

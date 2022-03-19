@@ -26,7 +26,6 @@ export default function Home() {
   const [displayRekening, setDisplayRekening] = useState(false);
   const [displayLoveStory, setDisplayLoveStory] = useState(false);
   const [playing, setPlaying] = useState(true);
-  const [hidden, setHidden] = useState("hidden");
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -47,6 +46,21 @@ export default function Home() {
       delay: 200,
     });
   }, []);
+
+  if (displayWelcomePage) {
+    return (
+      <CSSTransition
+        in={displayWelcomePage}
+        unmountOnExit
+        timeout={500}
+        classNames="fade"
+      >
+        <WelcomePage
+          setDisplayWelcomePage={(visible) => setDisplayWelcomePage(visible)}
+        />
+      </CSSTransition>
+    );
+  }
 
   return (
     <div className="home-wrapper">
@@ -90,20 +104,6 @@ export default function Home() {
           playing={playing}
           setPlaying={(state) => setPlaying(state)}
         />
-
-        <CSSTransition
-          in={displayWelcomePage}
-          unmountOnExit
-          timeout={500}
-          classNames="fade"
-        >
-          <WelcomePage
-            setDisplayWelcomePage={(visible) => {
-              setDisplayWelcomePage(visible);
-              setHidden("");
-            }}
-          />
-        </CSSTransition>
 
         <CSSTransition in={visible} unmountOnExit timeout={0} classNames="fade">
           <Navigation />
@@ -164,7 +164,6 @@ export default function Home() {
           html,
           body {
             position: relative;
-            overflow: ${hidden};
           }
 
           .container {
