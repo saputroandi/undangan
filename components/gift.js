@@ -14,6 +14,12 @@ function Gift(props) {
     <div>
       <div className="gift container">
         <div className="gift-wrapper">
+          <div
+            className="close-button"
+            onClick={() => props.setDisplayRekening(false)}
+          >
+            X
+          </div>
           <div className="header">
             <p>Love Gift</p>
           </div>
@@ -197,6 +203,20 @@ function Gift(props) {
           text-align: center;
           font-size: 0.8em;
           align-self: center;
+        }
+
+        .close-button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 0.5rem 0.5rem 0 0;
+          border-radius: 50%;
+          width: 2rem;
+          background-color: rgb(191, 146, 112);
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          padding: 0.5rem;
+          font-size: 1.25em;
+          display: block;
         }
 
         .header {
