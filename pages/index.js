@@ -47,20 +47,20 @@ export default function Home() {
     });
   }, []);
 
-  // if (displayWelcomePage) {
-  //   return (
-  //     <CSSTransition
-  //       in={displayWelcomePage}
-  //       unmountOnExit
-  //       timeout={500}
-  //       classNames="fade"
-  //     >
-  //       <WelcomePage
-  //         setDisplayWelcomePage={(visible) => setDisplayWelcomePage(visible)}
-  //       />
-  //     </CSSTransition>
-  //   );
-  // }
+  if (displayWelcomePage) {
+    return (
+      <CSSTransition
+        in={displayWelcomePage}
+        unmountOnExit
+        timeout={500}
+        classNames="fade"
+      >
+        <WelcomePage
+          setDisplayWelcomePage={(visible) => setDisplayWelcomePage(visible)}
+        />
+      </CSSTransition>
+    );
+  }
 
   return (
     <div className="home-wrapper">
