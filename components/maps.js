@@ -14,16 +14,15 @@ function Maps() {
               scrolling="no"
               marginHeight={0}
               marginWidth={0}
-              src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Mesjid+azzahratush+shufiyyah&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+              src="https://maps.google.com/maps?q=Gedung%20Raihan%20Islamic%20Village&t=&z=13&ie=UTF8&iwloc=&output=embed"
             />
           </div>
         </div>
         <div className="link-button">
           <a
-            // href="https://goo.gl/maps/JTubxLm8Fcjesq5Q6"
             onClick={() =>
               window.open(
-                "https://goo.gl/maps/JTubxLm8Fcjesq5Q6",
+                "https://goo.gl/maps/Nee9enALNz3LeVWW9",
                 "_blank",
                 "noopener,noreferrer"
               )

@@ -6,35 +6,47 @@ function WelcomePage(props) {
   const { to, sesi } = router.query;
   return (
     <div>
-      <Falling />
-      <div className="background"></div>
+      {/* <Falling /> */}
+      {/* <div className="background"></div> */}
       <div className="welcome-page">
-        <div className="header">
+        <div className="header" style={{ color: "rgb(211, 222, 220)" }}>
           <div className="initial" data-aos="fade-right" data-aos-delay="500">
-            <h2>A</h2>
+            <h2>Risma</h2>
           </div>
           <div className="divider" data-aos="fade-down" data-aos-delay="500">
             <h2>&</h2>
           </div>
           <div className="initial" data-aos="fade-left" data-aos-delay="500">
-            <h2>A</h2>
+            <h2>Kiky</h2>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="500">
+        <div
+          data-aos="fade-up"
+          style={{ color: "rgb(211, 222, 220)" }}
+          data-aos-delay="500"
+        >
           <p>
             <strong>Kepada Yth.</strong>
           </p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="500">
+        <div
+          style={{ color: "rgb(211, 222, 220)" }}
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <p>Bapak/Ibu/Saudara/i</p>
         </div>
         {to && (
-          <div className="nama-tamu" data-aos="fade-up" data-aos-delay="500">
+          <div className="nama-tamu">
             <p>{to}</p>
             {sesi && <p>Sesi: {sesi}</p>}
           </div>
         )}
-        <div data-aos="fade-up" data-aos-delay="500">
+        <div
+          style={{ color: "rgb(211, 222, 220)" }}
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <p>di Tempat</p>
         </div>
         <div
@@ -58,34 +70,38 @@ function WelcomePage(props) {
         }
 
         .welcome-page {
-          position: fixed;
+          position: absolute;
           top: 0;
           bottom: 0;
-          right: 0;
           left: 0;
-          z-index: 45;
+          right: 0;
+          // z-index: 45;
           width: 100%;
-          height: 100%;
-          // background-color: rgb(254, 251, 243);
+          height: 100vh;
+          // background-color: rgba(254, 251, 243, 0);
+          background-image: url(/asset/cover-undangan.jpg);
+          background-position: center;
+          background-size: cover;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          gap: 0.5rem;
+          gap: 0.4rem;
         }
 
         .header {
           display: flex;
-          gap: 1rem;
-          height: 6rem;
-          font-size: 3em;
+          font-size: 2.8em;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           font-family: "Alex Brush", cursive;
         }
 
         .nama-tamu {
           width: 20rem;
           height: 8rem;
-          background-color: rgb(211, 222, 220);
+          background-color: rgba(211, 222, 220, 0.73);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -106,8 +122,11 @@ function WelcomePage(props) {
 
         .background {
           z-index: 40;
-          background-color: rgb(254, 251, 243);
-          position: absolute;
+          // background-color: rgb(254, 251, 243);
+          background-image: url(/asset/cover-undangan.jpg);
+          background-position: center;
+          background-size: cover;
+          position: fixed;
           top: 0;
           bottom: 0;
           left: 0;

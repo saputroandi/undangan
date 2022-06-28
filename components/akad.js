@@ -8,7 +8,7 @@ function Akad() {
   return (
     <div id="resepsi">
       <div data-aos="fade-up" className="akad container">
-        <Flower />
+        {/* <Flower /> */}
         <div className="akad-content">
           <div className="header">
             <p>Akad</p>
@@ -18,7 +18,7 @@ function Akad() {
               <p>Pukul:</p>
             </div>
             <div>
-              <p>{"08:00 : 09:30"} WIB</p>
+              <p>{"08:00"} WIB</p>
             </div>
           </div>
           <div className="tanggal">
@@ -27,14 +27,14 @@ function Akad() {
             </div>
             <div className="tanggal-middle-section">
               <div className="tanggal-middle-first-child">
-                <p>27</p>
+                <p>07</p>
               </div>
               <div className="tanggal-middle-last-child">
                 <p>2022</p>
               </div>
             </div>
             <div className="tanggal-right-section">
-              <p>Maret</p>
+              <p>Agustus</p>
             </div>
           </div>
           <div className="alamat">
@@ -42,13 +42,10 @@ function Akad() {
               <p>Lokasi Acara:</p>
             </div>
             <div className="alamat-nama">
-              <p>Mesjid azzahratush shufiyyah</p>
+              <p>Mesjid Al Istighna Islamic Village</p>
             </div>
             <div className="alamat-lengkap">
-              <p>
-                Jl. Peta Sel. Dalam rt.09/01, Kalideres, Kec. Kalideres, Kota
-                Jakarta Barat, Daerah Khusus Ibukota Jakarta 11840
-              </p>
+              <p>Kelapa Dua Tangerang - Banten</p>
             </div>
           </div>
 

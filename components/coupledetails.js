@@ -5,45 +5,45 @@ function CoupleDetails(props) {
   return (
     <div id="couple">
       <div className="couple container" data-aos="fade-up">
-        <Flower />
+        {/* <Flower /> */}
         <div className="couple-image">
           <img src="/asset/couple.jpg" alt="couple.jpg" />
         </div>
         <div className="couple-name">
           <div className="couple-name-girl">
             <div className="girl-name">
-              <p>Arum Setyarini</p>
+              <p>Kharisma Basri, S.Pd</p>
             </div>
             <div>
-              <p>Putri Pertama dari</p>
+              <p>Putri Kedua dari</p>
             </div>
             <div className="couple-parent">
-              <p>Bapak Suparmin</p>
+              <p>Bapak Basri</p>
               <p>dan</p>
-              <p>Ibu Tunik Setiyani</p>
+              <p>Ibu Siswati</p>
             </div>
           </div>
           <div className="couple-name-boy">
             <div className="boy-name">
-              <p>Andi Saputro</p>
+              <p>Fachrul Rizky, Amd.T</p>
             </div>
             <div>
               <p>Putra Pertama dari</p>
             </div>
             <div className="couple-parent">
-              <p>Bapak Harsoyo</p>
+              <p>Bapak Bahrum</p>
               <p>dan</p>
-              <p>Ibu Sukatmi</p>
+              <p>Ibu Lilis</p>
             </div>
           </div>
-          <div className="love-story">
+          {/* <div className="love-story">
             <div
               className="love-story-button"
               onClick={() => props.setDisplayLoveStory(true)}
             >
               <p>Love Story</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <style jsx>{`
@@ -79,8 +79,8 @@ function CoupleDetails(props) {
           .girl-name > p,
           .boy-name > p {
             font-family: "Great Vibes", serif;
-            letter-spacing: 0.245rem;
-            font-size: 2em;
+            letter-spacing: 0.15rem;
+            font-size: 1.5em;
             font-weight: bold;
           }
 
